@@ -1,0 +1,45 @@
+//
+// Prefix header for all source files of the 'Mokugyo' target in the 'Mokugyo' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// ---------------------------------------------------------------------
+// 各画面で使用する定数定義を設定
+// ---------------------------------------------------------------------
+
+// ゲームモード
+#define MODE_STAGE 0
+#define MODE_CHARANGE 1
+
+// クリアID
+#define STAGE_CLEAR @"1"
+#define STAGE_MISS  @"0"
+
+// ステージのリスト
+#define STAGE_LIST    [NSArray arrayWithObjects:@"[初級]　ノーマルモード", @"[中級]　ノーマルモード", @"[上級]　ノーマルモード", @"[初級]　ライフが全て１！", @"[中級]　ライフが全て１！", @"[上級]　ライフが全て１！", @"[初級]　ライフが消える！", @"[中級]　ライフが消える！", @"[上級]　ライフが消える！",  @"[初級]　30秒以内に！", @"[中級]　50秒以内に！", @"[上級]　100秒以内に！", nil]
+
+// ステージ(index path)
+#define STAGE_1 0
+#define STAGE_2 1
+#define STAGE_3 2
+#define STAGE_4 3
+#define STAGE_5 4
+#define STAGE_6 5
+#define STAGE_7 6
+#define STAGE_8 7
+#define STAGE_9 8
+#define STAGE_10 9
+#define STAGE_11 10
+#define STAGE_12 11
+
+#define STAGE_1000 999
